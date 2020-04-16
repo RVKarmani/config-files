@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: admin-activities
+  data:
+    mongodb:
+      port:27017
+      database:admin-activities
+server.port:8050
+  
+---
+spring:
+  profiles: development
+  data:
+    mongodb:
+     host:localhost
+server.port:8060
+---
+spring:
+  profiles: performance
+  data:
+    mongodb:
+     host:localhost
+server.port:8070
